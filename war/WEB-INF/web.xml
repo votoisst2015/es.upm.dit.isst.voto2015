@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>VotoServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.voto2015.VotoServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UploadCertificateServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.voto2015.UploadCertificateServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>VotoServlet</servlet-name>
+		<url-pattern>/VotoServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ContactServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.voto2015.ContactServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ContactServlet</servlet-name>
+		<url-pattern>/ContactServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UploadCertificateServlet</servlet-name>
+		<url-pattern>/UploadCertificateServlet</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
